@@ -58,7 +58,7 @@ extends ToggleMod {
                 WPlayerController.windowClick_PICKUP(8 - type);
                 WPlayerController.windowClick_PICKUP(slot < 9 ? 36 + slot : slot);
             }
-        }catch(Exception e){//Empty Try Catch Block...}}
         }
+        }catch(Exception e){//Empty Try Catch Block...}}
 }
 

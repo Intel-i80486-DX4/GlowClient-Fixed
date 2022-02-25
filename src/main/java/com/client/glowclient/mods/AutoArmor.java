@@ -31,6 +31,7 @@ extends ToggleMod {
 
     @SubscribeEvent
     public void onLocalPlayerUpdate(PlayerUpdateEvent event) {
+        try{
         if (!this.timer.isStarted()) {
             this.timer.start();
         } else if (this.timer.hasTimeElapsed(0.0)) {
@@ -58,6 +59,6 @@ extends ToggleMod {
                 WPlayerController.windowClick_PICKUP(slot < 9 ? 36 + slot : slot);
             }
         }
-    }
+        }catch(Exception e){//Empty Try Catch Block...}}
 }
 
